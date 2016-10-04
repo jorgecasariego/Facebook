@@ -14,6 +14,8 @@
 		27DC46EF1D99D4CB009D1DC6 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DC46EE1D99D4CB009D1DC6 /* Posts.swift */; };
 		27DC46F11D99D4F2009D1DC6 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DC46F01D99D4F2009D1DC6 /* FeedCell.swift */; };
 		27DC46F31D99D517009D1DC6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DC46F21D99D517009D1DC6 /* Extensions.swift */; };
+		27F907451DA3E9BB00E391C9 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F907441DA3E9BB00E391C9 /* CustomTabBarController.swift */; };
+		27F907471DA3FFEF00E391C9 /* FriendRequestsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F907461DA3FFEF00E391C9 /* FriendRequestsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		27DC46EE1D99D4CB009D1DC6 /* Posts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
 		27DC46F01D99D4F2009D1DC6 /* FeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		27DC46F21D99D517009D1DC6 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		27F907441DA3E9BB00E391C9 /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		27F907461DA3FFEF00E391C9 /* FriendRequestsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendRequestsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				274ED10A1D89E5DE008F96A6 /* Info.plist */,
 				27DC46F01D99D4F2009D1DC6 /* FeedCell.swift */,
 				27DC46F21D99D517009D1DC6 /* Extensions.swift */,
+				27F907441DA3E9BB00E391C9 /* CustomTabBarController.swift */,
+				27F907461DA3FFEF00E391C9 /* FriendRequestsController.swift */,
 			);
 			path = Facebook;
 			sourceTree = "<group>";
@@ -144,9 +150,11 @@
 			files = (
 				27DC46F31D99D517009D1DC6 /* Extensions.swift in Sources */,
 				274ED1011D89E5DE008F96A6 /* FeedController.swift in Sources */,
+				27F907451DA3E9BB00E391C9 /* CustomTabBarController.swift in Sources */,
 				27DC46F11D99D4F2009D1DC6 /* FeedCell.swift in Sources */,
 				27DC46EF1D99D4CB009D1DC6 /* Posts.swift in Sources */,
 				274ED0FF1D89E5DE008F96A6 /* AppDelegate.swift in Sources */,
+				27F907471DA3FFEF00E391C9 /* FriendRequestsController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
