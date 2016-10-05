@@ -16,6 +16,8 @@
 		27DC46F31D99D517009D1DC6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DC46F21D99D517009D1DC6 /* Extensions.swift */; };
 		27F907451DA3E9BB00E391C9 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F907441DA3E9BB00E391C9 /* CustomTabBarController.swift */; };
 		27F907471DA3FFEF00E391C9 /* FriendRequestsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F907461DA3FFEF00E391C9 /* FriendRequestsController.swift */; };
+		27F9074D1DA403CD00E391C9 /* FriendRequestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F9074C1DA403CD00E391C9 /* FriendRequestCell.swift */; };
+		27F9074F1DA4044000E391C9 /* RequestHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F9074E1DA4044000E391C9 /* RequestHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		27DC46F21D99D517009D1DC6 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		27F907441DA3E9BB00E391C9 /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		27F907461DA3FFEF00E391C9 /* FriendRequestsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendRequestsController.swift; sourceTree = "<group>"; };
+		27F9074C1DA403CD00E391C9 /* FriendRequestCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendRequestCell.swift; sourceTree = "<group>"; };
+		27F9074E1DA4044000E391C9 /* RequestHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,17 +67,51 @@
 			isa = PBXGroup;
 			children = (
 				274ED0FE1D89E5DE008F96A6 /* AppDelegate.swift */,
-				274ED1001D89E5DE008F96A6 /* FeedController.swift */,
-				27DC46EE1D99D4CB009D1DC6 /* Posts.swift */,
+				27F907481DA4033000E391C9 /* Model */,
+				27F907491DA4033500E391C9 /* View */,
+				27F9074A1DA4033A00E391C9 /* Controller */,
+				27F9074B1DA4034700E391C9 /* Helper */,
 				274ED1051D89E5DE008F96A6 /* Assets.xcassets */,
 				274ED1071D89E5DE008F96A6 /* LaunchScreen.storyboard */,
 				274ED10A1D89E5DE008F96A6 /* Info.plist */,
-				27DC46F01D99D4F2009D1DC6 /* FeedCell.swift */,
-				27DC46F21D99D517009D1DC6 /* Extensions.swift */,
-				27F907441DA3E9BB00E391C9 /* CustomTabBarController.swift */,
-				27F907461DA3FFEF00E391C9 /* FriendRequestsController.swift */,
 			);
 			path = Facebook;
+			sourceTree = "<group>";
+		};
+		27F907481DA4033000E391C9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				27DC46EE1D99D4CB009D1DC6 /* Posts.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		27F907491DA4033500E391C9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				27DC46F01D99D4F2009D1DC6 /* FeedCell.swift */,
+				27F9074C1DA403CD00E391C9 /* FriendRequestCell.swift */,
+				27F9074E1DA4044000E391C9 /* RequestHeader.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		27F9074A1DA4033A00E391C9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				27F907441DA3E9BB00E391C9 /* CustomTabBarController.swift */,
+				274ED1001D89E5DE008F96A6 /* FeedController.swift */,
+				27F907461DA3FFEF00E391C9 /* FriendRequestsController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		27F9074B1DA4034700E391C9 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				27DC46F21D99D517009D1DC6 /* Extensions.swift */,
+			);
+			name = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +189,8 @@
 				27DC46F31D99D517009D1DC6 /* Extensions.swift in Sources */,
 				274ED1011D89E5DE008F96A6 /* FeedController.swift in Sources */,
 				27F907451DA3E9BB00E391C9 /* CustomTabBarController.swift in Sources */,
+				27F9074D1DA403CD00E391C9 /* FriendRequestCell.swift in Sources */,
+				27F9074F1DA4044000E391C9 /* RequestHeader.swift in Sources */,
 				27DC46F11D99D4F2009D1DC6 /* FeedCell.swift in Sources */,
 				27DC46EF1D99D4CB009D1DC6 /* Posts.swift in Sources */,
 				274ED0FF1D89E5DE008F96A6 /* AppDelegate.swift in Sources */,
