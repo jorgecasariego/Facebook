@@ -20,7 +20,7 @@ class FeedCell: UICollectionViewCell {
             
             if let statusImageUrl = post?.statusImageUrl {
                 
-                if let image = imageCache.object(forKey: statusImageUrl as NSString) as UIImage! {
+                if let image = imageCache.object(forKey: statusImageUrl as NSString) as UIImage? {
                     statusImageView.image = image
                     loader.stopAnimating()
                 } else {
@@ -60,15 +60,15 @@ class FeedCell: UICollectionViewCell {
     
     private func setupNameLocationStatusAndProfileImage(){
         if let name = post?.name {
-            let attributedText = NSMutableAttributedString(string: name, attributes: [NSFontAttributeName: UIFont.boldSystemFont(ofSize: 14)])
+            let attributedText = NSMutableAttributedString(string: name, attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 14)])
             
-            attributedText.append(NSAttributedString(string: "\nDecember 18  •  San Francisco  •  ", attributes: [NSFontAttributeName: UIFont.systemFont(ofSize: 12), NSForegroundColorAttributeName:
+            attributedText.append(NSAttributedString(string: "\nDecember 18  •  San Francisco  •  ", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 12), NSAttributedString.Key.foregroundColor:
                 UIColor.rgb(red: 155, green: 161, blue: 161)]))
             
             let paragraphStyle = NSMutableParagraphStyle()
             paragraphStyle.lineSpacing = 4
             
-            attributedText.addAttribute(NSParagraphStyleAttributeName, value: paragraphStyle, range: NSMakeRange(0, attributedText.string.characters.count))
+            attributedText.addAttribute(NSAttributedString.Key.paragraphStyle, value: paragraphStyle, range: NSMakeRange(0, attributedText.string.count))
             
             let attachment = NSTextAttachment()
             attachment.image = UIImage(named: "globe_small")
@@ -153,7 +153,7 @@ class FeedCell: UICollectionViewCell {
         button.setTitleColor(UIColor.rgb(red: 143, green: 150, blue: 163), for: .normal)
         
         button.setImage(UIImage(named: imageName), for: .normal)
-        button.titleEdgeInsets = UIEdgeInsetsMake(0, 8, 0, 0)
+        button.titleEdgeInsets = UIEdgeInsets(top: 0, left: 8, bottom: 0, right: 0)
         
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
         
@@ -197,7 +197,7 @@ class FeedCell: UICollectionViewCell {
         addConstraintsWithFormat(format: "V:[v0(44)]|", views: shareButton)
     }
     
-    let loader = UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge)
+    let loader = UIActivityIndicatorView(style: .whiteLarge)
     
     func setupStatusImageViewLoader() {
         loader.hidesWhenStopped = true
